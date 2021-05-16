@@ -1,0 +1,351 @@
+/* Desktop */
+
+    /* Basic */
+    html {
+        font-size: 16px;
+        font-family: 'Asap', sans-serif;
+        color: #505050;
+        overflow-x: hidden;
+    }
+
+    .flexbox {
+        display: flex;
+    }
+
+    .mobile {
+        display: none;
+        padding: 0;
+        margin: 0;
+    } 
+
+    a {
+        color: #505050;
+        text-decoration: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container_left {
+        width: 60%;
+        padding: 32px 24px 32px 24px;
+    }
+
+    .container_left img, video {
+        width: 100%;
+    }
+
+    .container_right {
+        width: 40%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1, h2 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .small_image {
+        width: 35%;
+        height: auto;
+        padding: 16px;
+    }
+
+    .cnt_rtxt {
+        width: 65%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .h1_main {
+        font-size: 40px;
+        font-weight: 800;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .h2_main {
+        font-size: 30px;
+    }
+
+    .cnt_rtxt p, .cnt_rtxt a {
+        margin-top: 8px;
+        margin-bottom: 0;
+    }
+
+    .cnt_btxt {
+        padding: 0 16px 0 16px;
+    }
+
+    ul {
+        list-style: none;
+        justify-content: space-between;
+    }
+
+    /* Header */
+    header {
+        height: 64px;
+        width: auto;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0 24px 0 24px;    
+        justify-content: space-between;
+        align-items: center; 
+        background-color: white;  
+        border: solid 1px #c0c0c0;
+    }
+
+    header img {
+        height: 48px;
+        width: auto;
+    }
+
+    .header_logo {
+        align-items: center; 
+    }
+
+    header span {
+        font-weight: 300;
+    }
+
+    header a {
+        margin-left: 16px;
+        font-size: 22px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    /* Start block */ 
+    .start_block {
+        background-color: #c8c8c8;
+        width: 100%;
+    }
+
+    .start_block h1 {
+        font-size: 4vw;
+        font-weight: 800;
+        margin-bottom: 32px;
+    }
+
+    .start_block h2 {
+        font-size: 2vw;
+        font-weight: 600;
+        margin-bottom: 24px;
+    }
+
+    .start_block a {
+        background-color: #505050;
+        color: white;
+        width: 30vw;
+        padding: 8px 0 8px 0;
+        text-align: center;
+        font-size: 1.8vw;
+        font-weight: 400;
+    }
+
+    /* Hurt block */
+    .container_left p {
+        font-size: 18px;
+        margin-top: 24px;
+        margin-bottom: 0;
+    }
+
+    .hurt_block a {
+        color: #20639B;
+    }
+
+    .hurt_block .container_right {
+        justify-content: space-between;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .hurt_block .h1_main {
+        padding-bottom: 0;
+    }
+
+    /* Pallet block */
+    .pallet_block {
+        background-color: #c8c8c8;
+        padding: 0 72px 0 72px;
+    }
+
+    .pallet_block .h1_main, .thesis_block .h1_main {
+        text-align: center;
+    }
+
+    .pallet_block .h2_main {
+        margin-top: 16px;
+    }
+
+    .pallet_block p {
+        margin-top: 8px;
+        margin-bottom: 0;
+    }
+
+    .pallet_container {
+        margin: 0;
+        width: 100%;
+        flex-wrap: wrap;
+        
+        justify-content: space-between;
+    }
+
+    .pallet_element {
+        flex-direction: column;
+        width: calc((100% - 2 * 32px)/3);
+        padding-bottom: 24px;
+        background-color: white;
+        margin-bottom: 32px;
+    }
+
+    /* Thesis block */
+    .thesis_block .container_right {
+        justify-content: flex-start;
+        padding-top: 32px;
+    }
+
+    .thesis_block h1 {
+        padding-bottom: 0;
+    }
+
+    .thesis_block p {
+        margin-top: 8px;
+    }
+
+    .thesis_block .h2_main {
+        margin-top: 24px;
+    }
+
+    .thesis_block .container_right .h2_main {
+        margin-top: 0;
+    }
+   
+    /* Footer */
+    footer {
+        border-top: solid 1px gray;
+        padding: 16px 24px 16px 24px;
+        align-items: center;
+        height: 49px;
+        width: 100%;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+    footer li {
+        padding-left: 16px;
+    }
+
+/* Mobile */
+@media only screen and (max-width: 900px) {
+
+    /* Basic */
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex; /* ??? */
+    }
+
+    .container_left {
+        width: 100%;
+        padding: 0;
+    }
+
+    .container_right {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 32px 16px 32px 16px;
+    }
+
+    .cnt_img_rtxt {
+        flex-direction: column;
+    }
+
+    .cnt_rtxt {
+        padding: 64px 0 64px 16px;
+    }
+
+    .h1_main {
+        font-size: 55px;
+    }
+
+    .h2_main {
+        font-size: 48px;
+    }
+
+    /* Header */
+    header ul {
+        width: 100%;
+    }
+
+    /* Start block */
+    .start_block {
+        flex-direction: column;
+    }
+
+    .start_block h1 {
+        font-size: 10vw;
+    }
+
+    .start_block h2 {
+        font-size: 5vw;
+    }
+
+    .start_block a {
+        width: 100%;
+        font-size: 3.5vw;
+    }
+
+    /* Hurt block */
+    .hurt_block p, .hurt_block a {
+        font-size: 28px;
+    }
+
+    .hurt_block .container_right {
+        padding-bottom: 0;
+    }
+
+    /* Pallet block */
+    .pallet_block {
+        background-color: white;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 32px;
+    }
+
+    .pallet_block h1 {
+        padding-top: 0;
+        padding-bottom: 16px;
+    }
+
+    .pallet_container {
+        flex-direction: column;
+    }
+    
+    .pallet_element {
+        width: 100%;
+        background-color: #c8c8c8;
+        margin-bottom: 8px;
+    }
+
+    /* Thesis block */
+    .thesis_block h1 {
+        padding-bottom: 16px;
+    }
+
+    .thesis_block video {
+        padding-bottom: 24px;
+    }
+}
